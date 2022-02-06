@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Fonts */
+  --title-font: "Bebas Neue", cursive;
+  --main-font: "Open Sans", sans-serif;
+  /* Colors */
+}
+/* //General */
