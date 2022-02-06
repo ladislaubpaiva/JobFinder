@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
-/* General */
 * {
   margin: 0;
   padding: 0;
@@ -11,5 +10,39 @@
   --title-font: "Bebas Neue", cursive;
   --main-font: "Open Sans", sans-serif;
   /* Colors */
+  --main-color: #3381f3;
 }
-/* //General */
+/* Header */
+header.container {
+  width: 100%;
+  padding: 0.4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  height: auto;
+}
+header.container img {
+  height: 50px;
+}
+nav.menu ul {
+  display: flex;
+  list-style: none;
+}
+nav.menu ul li a {
+  margin: 0 4px;
+  padding: 10px;
+  text-decoration: none;
+  color: #444;
+  font: 1rem var(--main-font);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+nav.menu ul li a:hover {
+  color: var(--main-color);
+}
+/* //Header */

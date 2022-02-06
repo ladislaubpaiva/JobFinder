@@ -22,20 +22,45 @@
       rel="stylesheet"
     />
     <!-- //Stylesheets -->
-    <meta http-equiv="refresh" content="3;" />
+    <meta http-equiv="refresh" content="33;" />
   </head>
   <body>
     <header class="container">
       <img src="images/logo.png" alt="JobFinder Logo" />
       <nav class="menu">
-        <ol>
+        <ul>
           <li><a href="#">Find jobs</a></li>
           <li><a href="#">Post jobs</a></li>
           <li><a href="#">Contact</a></li>
-        </ol>
+        </ul>
       </nav>
     </header>
-    <main class="container"></main>
+    <main class="container">
+      <section class="banner">
+        <div class="text">
+          <h1>The easiest way to find your new job</h1>
+          <p>
+            Connect for free to the best companies and get the job of your
+            dreams.
+          </p>
+        </div>
+        <form>
+          <input
+            type="text"
+            name="job"
+            id="job"
+            placeholder="Enter your position"
+          />
+          <select name="region" id="region">
+            <option value="All">All states</option>
+          </select>
+          <select name="category" id="category">
+            <option value="">Category</option>
+          </select>
+          <input type="submit" value="Search" />
+        </form>
+      </section>
+    </main>
     <footer class="container"></footer>
   </body>
 </html>
