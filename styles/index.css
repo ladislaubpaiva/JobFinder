@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700;800&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -66,7 +68,9 @@ section.main-banner .banner-container {
   text-align: center;
 }
 section.main-banner .text h1 {
-  font: 3rem var(--title-font);
+  font: 3.5rem var(--title-font);
+  color: #3c3c3c;
+  text-shadow: 1px 1px 2px #fff;
 }
 section.main-banner .text p {
   margin-top: 2em;
@@ -100,15 +104,15 @@ section.main-banner .text p {
 }
 /* //Banner */
 /* Latest Jobs */
-section.latest-jobs {
+section.b-container {
   margin: 0 auto;
-  padding: 6em 2em;
+  padding: 4em 2em;
   position: relative;
   max-width: 1200px;
 }
 section.latest-jobs h1 {
   font-size: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   text-align: center;
   text-transform: capitalize;
 }
@@ -174,18 +178,106 @@ section.latest-jobs .job .type span {
   text-transform: uppercase;
   float: right;
 }
-.job .type span.clt {
+a.job .type span.clt {
   background-color: #735fee;
 }
-.job .type span.pj {
+a.job .type span.pj {
   background-color: #5bbc2e;
 }
-.job .type span.home-office {
+a.job .type span.home-office {
   background-color: #ff5a5f;
 }
 /* Button */
-
+section.latest-jobs .view-more a {
+  width: 30%;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+  margin: 1.5em auto;
+  text-align: center;
+  text-decoration: none;
+  color: var(--main-color);
+  text-transform: uppercase;
+  border: 3px solid var(--main-color);
+  transition: all 0.3s;
+}
+section.latest-jobs .view-more a:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
 /* //Latest Jobs */
+/* Send vacancy */
+section.send-job {
+  background: var(--main-color) url(../images/banner2.jpg) no-repeat;
+  background-size: cover;
+  padding: 10em 0;
+  background-position: left center;
+}
+div.b-container {
+  margin: 0 auto;
+  padding: 4em 2em;
+  position: relative;
+  max-width: 1200px;
+}
+div.b-container .text {
+  color: #fff;
+  max-width: 550px;
+  font-weight: 600;
+}
+section.send-job h1 {
+  text-transform: capitalize;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+section.send-job p {
+  font-size: 1.1em;
+  margin-bottom: 50px;
+  color: #f5f5f5;
+  text-shadow: 1px 1px #111;
+}
+section.send-job a {
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+section.send-job a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+/* //Send vacancy */
+/* Statistics */
+.statistics {
+  text-align: center;
+}
+.statistics h1 {
+  margin: 1em 0;
+}
+.statistics p {
+  margin: 1.2em;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+.stats-box {
+  padding: 30px;
+}
+.stats-box span {
+  color: #666;
+  font-size: 2em;
+  font-weight: 400;
+}
+.stats-box p {
+  color: #666;
+  font-weight: 600;
+}
+/* //Statistics */
 @media screen and (max-width: 860px) {
   main section.main-banner {
     background-position: right bottom;
@@ -202,18 +294,34 @@ section.latest-jobs .job .type span {
     flex-direction: column;
     text-align: center;
   }
+  section.latest-jobs .company-box,
+  section.latest-jobs .job .locality,
+  section.latest-jobs .job .type {
+    width: 100%;
+  }
   section.latest-jobs .job {
     justify-content: center;
+    gap: 10px;
   }
   section.latest-jobs .company-box img {
     width: 200px;
   }
-  section.latest-jobs .job .locality {
-    width: 100%;
+  section.latest-jobs .job .info h2 {
+    font-size: 1.2em;
   }
   section.latest-jobs .job .type span {
-    margin: auto;
-    display: block;
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+  }
+  section.latest-jobs .view-more a {
+    width: 70%;
+  }
+  section.send-job h1 {
+    font-size: 1.6em;
+  }
+  section.send-job p {
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 375px) {
