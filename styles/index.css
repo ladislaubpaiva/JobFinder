@@ -485,6 +485,10 @@ article.box a.read {
     flex-direction: column;
     align-items: center;
   }
+  article.box {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 @media screen and (max-width: 375px) {
   /* Banner */
