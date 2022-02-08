@@ -191,7 +191,8 @@ a.job .type span.home-office {
   background-color: #ff5a5f;
 }
 /* Button */
-section.latest-jobs .view-more a {
+section.latest-jobs .view-more a,
+section.blog a.read {
   width: 30%;
   padding: 10px;
   display: block;
@@ -204,7 +205,8 @@ section.latest-jobs .view-more a {
   border: 3px solid var(--main-color);
   transition: all 0.3s;
 }
-section.latest-jobs .view-more a:hover {
+section.latest-jobs .view-more a:hover,
+section.blog a.read:hover {
   color: #fff;
   background-color: var(--main-color);
 }
