@@ -486,7 +486,7 @@ article.box a.read {
     align-items: center;
   }
   article.box {
-    width: 10%;
+    width: 100%;
     margin: 10px 0;
   }
 }
