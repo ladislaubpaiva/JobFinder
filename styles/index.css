@@ -491,6 +491,9 @@ article.box a.read {
     width: 100%;
     margin: 10px 0;
   }
+  section.blog a.read {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 375px) {
   /* Banner */
