@@ -342,6 +342,20 @@ section.send-job a:hover {
   section.send-job p {
     font-size: 1em;
   }
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stats-box {
+    width: 100%;
+    border: transparent;
+    border-top: 2px solid #666;
+    border-bottom: 2px solid #666;
+  }
+  .stats-box:last-child {
+    border: transparent;
+    border-bottom: 2px solid #666;
+  }
 }
 @media screen and (max-width: 375px) {
   /* Banner */
