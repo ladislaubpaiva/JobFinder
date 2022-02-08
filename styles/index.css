@@ -18,6 +18,9 @@ html {
 body {
   font-family: var(--main-font);
 }
+h1 {
+  font-family: var(--title-font);
+}
 /* Header */
 header.container {
   width: 100%;
@@ -68,7 +71,7 @@ section.main-banner .banner-container {
   text-align: center;
 }
 section.main-banner .text h1 {
-  font: 3.5rem var(--title-font);
+  font-size: 3.5rem;
   color: #3c3c3c;
   text-shadow: 1px 1px 2px #fff;
 }
@@ -114,7 +117,6 @@ section.latest-jobs h1 {
   font-size: 2.5em;
   margin-bottom: 1.5em;
   text-align: center;
-  font-family: var(--title-font);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 section.latest-jobs ul {
@@ -228,7 +230,6 @@ div.b-container .text {
 section.send-job h1 {
   font-size: 2.5em;
   margin-bottom: 40px;
-  font-family: var(--title-font);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 section.send-job p {
@@ -253,6 +254,7 @@ section.send-job a:hover {
   color: #fff;
 }
 /* //Send vacancy */
+
 /* Statistics */
 .statistics {
   text-align: center;
@@ -261,7 +263,6 @@ section.send-job a:hover {
   margin: 1em 0;
   font-size: 2.5em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  font-family: var(--title-font);
 }
 .statistics p {
   margin: 2.5em 0;
@@ -297,6 +298,81 @@ section.send-job a:hover {
   font-weight: 600;
 }
 /* //Statistics */
+/* Testimony */
+section.testimony {
+  background: var(--main-color) url(../images/banner7.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 6em 0;
+}
+section.testimony h1 {
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+  color: #fff;
+}
+section.testimony p {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 1.2em;
+  text-align: center;
+}
+section.testimony div.boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4em;
+}
+section.testimony div.box {
+  width: 20%;
+}
+section.testimony div.box img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+section.testimony div.box p:first-child {
+  color: #666;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-style: italic;
+  font-size: 1em;
+  position: relative;
+}
+section.testimony div.box p:first-child::after {
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fff;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+section.testimony div.box p:last-child {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+/* //Testimony */
+/* Blog */
+section.blog {
+}
+div.articles {
+  display: flex;
+  justify-content: space-between;
+}
+article.box {
+  width: 30%;
+}
+article.box img {
+  width: 100%;
+}
 @media screen and (max-width: 860px) {
   main section.main-banner {
     background-position: right bottom;
@@ -355,6 +431,17 @@ section.send-job a:hover {
   .stats-box:last-child {
     border: transparent;
     border-bottom: 2px solid #666;
+  }
+  section.testimony div.boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.testimony div.box {
+    width: 100%;
+  }
+  div.articles {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 375px) {
