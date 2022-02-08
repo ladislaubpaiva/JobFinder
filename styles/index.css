@@ -504,4 +504,7 @@ article.box a.read {
   #search-form select {
     font-size: 1em;
   }
+  article.box a.read {
+    width: 80%;
+  }
 }
