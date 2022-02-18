@@ -16,7 +16,8 @@
     />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/index.css" title="MainStyle" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
@@ -31,9 +32,16 @@
   </head>
   <body>
     <header class="container">
-      <a href="#"><img src="images/logo.png" alt="JobFinder Logo" /></a>
-      <nav class="menu">
-        <ul>
+      <a href="index.html">
+        <img src="images/logo.png" alt="JobFinder Logo" />
+      </a>
+      <span id="myNavBtn" onclick="openNav()"> &#9776; </span>
+
+      <nav id="myNav" class="myNav overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          &times;
+        </a>
+        <ul class="overlay-content">
           <li><a href="#">Find jobs</a></li>
           <li><a href="#">Post jobs</a></li>
           <li><a href="#">Contact</a></li>
@@ -312,5 +320,6 @@
         </p>
       </div>
     </footer>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
