@@ -374,44 +374,7 @@ article.box a.read {
 article.box a.read:hover {
   background-color: var(--secondary-color);
 }
-/* Footer */
-footer.container {
-  color: #fff;
-  background-color: #3c3c3c;
-  text-align: center;
-  padding: 3em 0 0;
-  position: relative;
-  bottom: 0;
-}
-footer.container div.main p {
-  font-size: 1.2em;
-  text-transform: capitalize;
-  padding: 10px 0;
-}
-footer.container div.social-links i {
-  font-size: 2em;
-  padding: 15px 0;
-  color: #fff;
-}
-footer.container div.social-links i:hover {
-  color: var(--secondary-color);
-}
-footer.container div.copyright {
-  font-size: 1em;
-  background-color: #333;
-}
-footer.container div.copyright a {
-  color: #a7a7a7;
-}
-footer.container div.copyright a:hover {
-  color: #c9c9c9;
-  text-decoration: underline;
-}
-/* //Footer */
 @media screen and (max-width: 780px) {
-  header.container img {
-    height: 40px;
-  }
   main section.main-banner {
     background-position: right bottom;
   }
