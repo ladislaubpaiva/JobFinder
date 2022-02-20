@@ -36,7 +36,7 @@ Connect for free to the best companies and get the job of your dreams
 
 ## Links
 
-- Live Site URL: [NFT Card](https://ladislaubpaiva.github.io/jobfinder)
+- Live Site URL: [JobFinder](https://ladislaubpaiva.github.io/jobfinder)
 
 ## License
 
