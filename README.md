@@ -1,5 +1,3 @@
-# jobfinder
-
 <div align=center>
 
 # JobFinder - Free Job Vacancies
