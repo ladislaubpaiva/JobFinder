@@ -24,10 +24,10 @@ h1 {
 }
 /* Header */
 header.container {
-  padding: 0.4rem 2rem;
+  padding: 0.4rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
   font-size: 1.1rem;
