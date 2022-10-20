@@ -1,14 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 import reset from './reset';
 
 export default createGlobalStyle`
 ${reset}
-
-#root{
-  max-width: 1364px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
 
 body{
   font-size: ${({ theme }) => theme.sizes.md};
@@ -29,4 +23,12 @@ body{
   white-space: nowrap!important;
   border-width: 0!important;
 }
+`;
+
+export const Limits = css`
+  max-width: 1364px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 `;

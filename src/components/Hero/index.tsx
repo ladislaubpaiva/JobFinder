@@ -64,8 +64,8 @@ export const Hero = () => {
           Icon={<Briefcase size={46} weight="fill" />}
           color="blue"
           title="10.5K"
-          top="25%"
-          right="15%"
+          top="16%"
+          right="20%"
         >
           Job Vacancy
         </Card>
@@ -73,9 +73,9 @@ export const Hero = () => {
           Icon={<Lightning size={46} weight="duotone" />}
           border={true}
           color="orange"
-          top="55%"
+          top="65%"
           right="unset"
-          left="10%"
+          left="6%"
         >
           It only takes <br />a few seconds
         </Card>

@@ -1,11 +1,14 @@
 import styled from 'styled-components';
+import { Limits } from '../../styles/global';
 import { Button } from '../Button';
 import { Buttons } from '../Header/styles';
 
 export const Container = styled.section`
   columns: 2;
   margin-top: ${({ theme }) => theme.spaces['6xl']};
-  padding-top: ${({ theme }) => theme.spaces['2xl']}; ;
+  padding-top: ${({ theme }) => theme.spaces['2xl']};
+  padding-bottom: ${({ theme }) => theme.spaces['6xl']};
+  ${Limits}
 `;
 
 export const Content = styled.div`
@@ -43,7 +46,7 @@ export const FormContainer = styled.div`
 export const SideContent = styled.div`
   position: relative;
   right: -15%;
-  top: -23rem;
+  top: -7%;
   z-index: -1;
 
   img {

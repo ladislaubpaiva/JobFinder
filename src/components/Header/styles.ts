@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import { Limits } from '../../styles/global';
 
 export const Container = styled.header`
+  ${Limits}
   display: flex;
   align-items: center;
   justify-content: space-between;

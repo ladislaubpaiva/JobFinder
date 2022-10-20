@@ -25,7 +25,7 @@ export const Card = styled.div<CardProps>`
         `;
       } else
         return css`
-          color: ${theme.colors.alt};
+          color: ${theme.colors.gray};
           & > *[opacity='0.2'] {
             opacity: 1;
             color: ${theme.colors[color]};
