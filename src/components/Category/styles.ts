@@ -7,6 +7,8 @@ export const Container = styled.article<{ primary: boolean }>`
   box-shadow: 0 0.5rem 2.1rem #ffefe0;
   background-color: ${({ theme }) => theme.colors['bg-card']};
   padding: ${({ theme }) => `${theme.spaces.xl} ${theme.spaces.md}`};
+  cursor: pointer;
+  transition: 0.3s;
 
   ${({ primary, theme }) => {
     if (primary) {
@@ -26,6 +28,10 @@ export const Container = styled.article<{ primary: boolean }>`
       `;
     }
   }}
+
+  &:hover {
+    box-shadow: 0 0.7rem 2.1rem ${({ theme }) => theme.colors.line};
+  }
 `;
 export const Icon = styled.div`
   svg {

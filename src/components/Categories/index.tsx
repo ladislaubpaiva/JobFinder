@@ -8,18 +8,20 @@ import {
   PenNibStraight,
   YoutubeLogo,
 } from 'phosphor-react';
+
 import { Category } from '../Category';
+import { SectionHeader } from '../SectionHeader';
+
 import * as S from './styles';
 
 export const Categories = () => {
   return (
     <section>
-      <S.Header>
+      <SectionHeader>
         <p>Choose Categories</p>
         <h2>Choose Categories</h2>
-      </S.Header>
+      </SectionHeader>
       <S.Categories>
-        {/* <Category title="Marketing & Communication" /> */}
         <Category
           Icon={
             <MegaphoneSimple

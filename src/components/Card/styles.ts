@@ -35,9 +35,9 @@ export const Card = styled.div<CardProps>`
   }
 
   h3 {
+    line-height: 140%;
     color: ${({ theme }) => theme.colors['text-card']};
     font-weight: ${({ theme }) => theme.weights.bd};
-    line-height: 140%;
     font-size: ${({ theme }) => theme.sizes.xl};
     letter-spacing: 0.005em;
   }
@@ -49,4 +49,50 @@ export const Card = styled.div<CardProps>`
     font-weight: ${({ theme }) => theme.weights.md};
     font-size: ${({ theme }) => theme.sizes.md};
   }
+
+  ${({ theme, large, custom }) => {
+    const H3: any = css`
+      h3 {
+        font-size: ${theme.sizes.lg};
+        color: ${theme.colors['text-primary']};
+      }
+    `;
+
+    if (large)
+      return css`
+        flex-direction: row;
+
+        ${H3}
+
+        p {
+          text-align: left;
+          font-size: ${theme.sizes.sm};
+          color: ${theme.colors['text-card']};
+        }
+      `;
+
+    if (custom)
+      return css`
+        padding-left: ${({ theme }) => theme.spaces.xl};
+        padding-right: ${({ theme }) => theme.spaces.xl};
+
+        img {
+          position: relative;
+          z-index: -1;
+          width: 8rem;
+          height: 8rem;
+        }
+
+        ${H3}
+
+        text-align: center;
+
+        p {
+          text-align: left;
+          font-size: ${theme.sizes.sm};
+          color: ${theme.colors['text-card']};
+          margin-bottom: ${({ theme }) => theme.spaces.lg};
+        }
+      `;
+  }}
 `;

@@ -4,6 +4,10 @@ import reset from './reset';
 export default createGlobalStyle`
 ${reset}
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-size: ${({ theme }) => theme.sizes.md};
   background-color: ${({ theme }) => theme.colors.bg};
