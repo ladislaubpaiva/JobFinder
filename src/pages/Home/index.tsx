@@ -4,7 +4,8 @@ import { Companies } from '../../components/Companies';
 import { Categories } from '../../components/Categories';
 import { CreateProfile } from '../../components/CreateProfile';
 import { HowItWorks } from '../../components/HowItWorks';
-import { Form } from '../../components/Fom';
+import { Form } from '../../components/Form';
+import { Footer } from '../../components/Footer';
 
 export const Home = () => (
   <>
@@ -17,5 +18,6 @@ export const Home = () => (
       <HowItWorks />
       <Form />
     </main>
+    <Footer />
   </>
 );

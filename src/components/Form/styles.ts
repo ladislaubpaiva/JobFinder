@@ -10,9 +10,12 @@ export const Container = styled.section`
   place-items: center end;
   grid-template-columns: 1fr 1.6fr;
   background-image: url('/form-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: ${({ theme }) => theme.sizes['6xl']};
   padding-left: ${({ theme }) => theme.spaces['6xl']};
   padding-right: ${({ theme }) => theme.spaces['6xl']};
+  margin-bottom: ${({ theme }) => theme.spaces['6xl']};
 `;
 
 export const Title = styled.div`
