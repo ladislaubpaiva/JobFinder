@@ -13,8 +13,10 @@ export const Container = styled.header<{ left: boolean }>`
 
   h2 {
     line-height: 120%;
-    font-size: ${({ theme }) => theme.sizes['3xl']};
+    font-size: ${({ theme }) => theme.sizes['4xl']};
     font-weight: ${({ theme }) => theme.weights.bd};
-    margin-bottom: ${({ theme }) => theme.spaces['6xl']};
+    :not(.no-mb) {
+      margin-bottom: ${({ theme }) => theme.spaces['6xl']};
+    }
   }
 `;

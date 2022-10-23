@@ -44,12 +44,12 @@ export const CreateProfile = () => {
       <S.Content>
         <SectionHeader left>
           <p>Create Profile</p>
-          <h2>
+          <h2 className="no-mb">
             Build Your Personal
             <br /> Account Profile
           </h2>
         </SectionHeader>
-        <p>
+        <p className="mb">
           Create an account for the job information you want, get daily
           notifications and you can easily apply directly to the company you
           want and create an account now for free
