@@ -12,7 +12,8 @@ export const Button = styled.a<BtnProps>`
   font-weight: ${({ theme }) => theme.weights.md};
   font-size: ${({ theme }) => theme.sizes.lg};
   transition: all 0.3s;
-  &:hover {
+  &:hover,
+  &.active {
     color: ${({ theme, primary }) => (!primary ? theme.colors.orange : '')};
   }
 

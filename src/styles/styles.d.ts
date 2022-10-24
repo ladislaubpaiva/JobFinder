@@ -27,7 +27,7 @@ declare module 'styled-components' {
     };
 
     spaces: {
-      [xs: string]: '0.8rem';
+      [xs: string]: string;
       sm: '1.2rem';
       md: '1.6rem';
       lg: '2.4rem';

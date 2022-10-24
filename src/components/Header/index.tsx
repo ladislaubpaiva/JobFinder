@@ -11,7 +11,7 @@ export const Header = () => (
     <S.Navbar>
       <ul>
         <li>
-          <Button>Home</Button>
+          <Button className="active">Home</Button>
         </li>
         <li>
           <Button>Employer</Button>

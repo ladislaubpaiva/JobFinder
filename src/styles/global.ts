@@ -12,6 +12,9 @@ body{
   font-size: ${({ theme }) => theme.sizes.md};
   background-color: ${({ theme }) => theme.colors.bg};
   font-family: ${({ theme }) => theme.fonts.primary};
+}
+body,
+#root{
   max-width: 100vw;
   overflow-x: hidden;
 }
